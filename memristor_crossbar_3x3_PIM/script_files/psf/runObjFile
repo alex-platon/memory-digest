@@ -1,0 +1,28 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Jul 24 16:31:30 2025"
+"simulator" "spectre"
+"date" "Jul 24 16:31:30 2025"
+ "externalSweepVariableCount" 0
+"#maeTestName" ""
+"#maeHistoryName" ""
+"#maeCorner" "nom"
+ "#maeDesignPoint" -1
+"netlistDir" "../../../../../simulation/memristor_crossbar_3x3_PIM/spectre/schematic/netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Run1" "runObject" (
+(
+"logFile"
+"artistLogFile"
+)
+""
+()
+)
+END

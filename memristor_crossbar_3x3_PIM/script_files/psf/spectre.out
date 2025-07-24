@@ -1,0 +1,277 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.527.isr6 64bit -- 31 Mar 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: aplanton   Host: ece-gui-003.ece.local.cmu.edu   HostID: 13AC8688   PID: 27259
+Memory  available: 24.8167 GB  physical: 67.3875 GB
+CPU Type: AMD EPYC 75F3 32-Core Processor
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     2950.0     0.4
+              1         2        0     2950.0     0.8
+              2         4        0     2950.0     0.7
+              3         6        0     2950.0     0.5
+              4         8        0     2950.0     0.5
+              5         10        0     2950.0     0.5
+
+
+Simulating `input.scs' on ece-gui-003.ece.local.cmu.edu at 4:31:29 PM, Thur Jul 24, 2025 (process id: 27259).
+Current working directory: /afs/andrew.cmu.edu/usr14/aplanton/simulation/memristor_crossbar_3x3_PIM/spectre/schematic/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+    /usr/cds/mmsim-14.10.527/tools.lnx86/bin/spectre -64 input.scs  \
+        +escchars +log  \
+        ../../../../../virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/psf/spectre.out  \
+        +inter=mpsc +mpssession=spectre20_9167_17 -format psfxl -raw  \
+        ../../../../../virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/psf  \
+        -I/afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre  \
+        -I/afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files  \
+        +aps +mt +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 27259
+
+Loading /usr/cds/mmsim-14.10.527/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/cds/mmsim-14.10.527/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/cds/mmsim-14.10.527/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/cds/mmsim-14.10.527/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/cds/mmsim-14.10.527/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/simulation/memristor_crossbar_3x3_PIM/spectre/schematic/netlist/input.scs
+Reading link:  /usr/cds
+Reading file:  /afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-14.10.527/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/setInitialCellStates.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_mos.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_diode.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_bipolar.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_mimcap.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_moscap.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_resistor.scs
+Reading file:  /afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre/gpdk045_inductor.scs
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_v1/veriloga/veriloga.va
+Reading file:  /afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-14.10.527/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-14.10.527/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Time for NDB Parsing: CPU = 301.729 ms, elapsed = 317.937 ms.
+Time accumulated: CPU = 319.828 ms, elapsed = 317.941 ms.
+Peak resident memory used = 51.9 Mbytes.
+
+
+Warning from spectre in `memory_manualSim_1T1R_memristor_cell_schematic', during circuit read-in.
+    WARNING (SFE-2453): The global node `0' and sub circuit terminal `0' will be treated as the sub circuit terminal.
+
+Existing shared object for module memristor_v1 is up to date.
+Installed compiled interface for memristor_v1.
+Reading link:  /usr/cds/mmsim-14.10.527/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading link:  /usr/cds/mmsim-14.10.527/tools.lnx86/spectre/etc/ahdl/constants.h
+Existing shared object for module bsource_08102a is up to date.
+Installed compiled interface for bsource_08102a.
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_BL3.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_WL3.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_SL3.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_BL1.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_SL2.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_SL1.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_WL1.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_WL2.txt
+Reading file:  /afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/waveforms/pwl_BL2.txt
+Time for Elaboration: CPU = 26.283 ms, elapsed = 42.7148 ms.
+Time accumulated: CPU = 346.393 ms, elapsed = 360.929 ms.
+Peak resident memory used = 58.4 Mbytes.
+
+Time for EDB Visiting: CPU = 993 us, elapsed = 992.06 us.
+Time accumulated: CPU = 347.574 ms, elapsed = 362.109 ms.
+Peak resident memory used = 59 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 9 nodes:
+        C11_R
+        C12_R
+        C13_R
+        C21_R
+        C22_R
+        Further occurrences of this notice will be suppressed.
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../../../../../virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files/psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 36
+              bsim4 9     
+     bsource_08102a 9     
+       memristor_v1 9     
+            vsource 9     
+
+Analysis and control statement inventory:
+              alter 9     
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    APS Enabled.
+    1 notice suppressed.
+
+Time for parsing: CPU = 3.292 ms, elapsed = 3.93486 ms.
+Time accumulated: CPU = 351.031 ms, elapsed = 366.21 ms.
+Peak resident memory used = 60 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre20_9167_17, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+Warning from spectre during alter `initC11'.
+    WARNING (SPECTRE-16939): The alter statement is ignored because the altered value is the same as the original value. Correct the alter statement and run the simulation again. 
+
+
+initC12: `initial_state' set to 1.
+
+Warning from spectre during alter `initC13'.
+    WARNING (SPECTRE-16939): The alter statement is ignored because the altered value is the same as the original value. Correct the alter statement and run the simulation again. 
+
+
+initC21: `initial_state' set to 1.
+
+initC22: `initial_state' set to 0.
+
+initC23: `initial_state' set to 1.
+
+Warning from spectre during alter `initC31'.
+    WARNING (SPECTRE-16939): The alter statement is ignored because the altered value is the same as the original value. Correct the alter statement and run the simulation again. 
+
+
+initC32: `initial_state' set to 1.
+
+Warning from spectre during alter `initC33'.
+    WARNING (SPECTRE-16939): The alter statement is ignored because the altered value is the same as the original value. Correct the alter statement and run the simulation again. 
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 150 us)
+*************************************************
+DC simulation time: CPU = 474 us, elapsed = 473.976 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 150 us
+    step = 150 ns
+    maxstep = 20 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Output and IC/nodeset summary:
+                 save   18      (current)
+                 save   36      (voltage)
+
+    tran: time = 3.755 us     (2.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 11.26 us    (7.51 %), step = 20 ns       (13.3 m%)
+    tran: time = 18.76 us    (12.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 26.26 us    (17.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 33.77 us    (22.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 41.27 us    (27.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 48.77 us    (32.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 56.27 us    (37.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 63.76 us    (42.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 71.26 us    (47.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 78.76 us    (52.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 86.26 us    (57.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 93.76 us    (62.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 101.3 us    (67.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 108.8 us    (72.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 116.3 us    (77.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 123.8 us    (82.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 131.3 us    (87.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 138.8 us    (92.5 %), step = 20 ns       (13.3 m%)
+    tran: time = 146.3 us    (97.5 %), step = 20 ns       (13.3 m%)
+Number of accepted tran steps =             8264
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+          add +cktpreset=sampled on command line for ADC/DAC simulation
+          add +cktpreset=pll on command line for PLL simulation
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+          maxstep = 20 ns, default 1.5 us (conservative)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial condition solution time: CPU = 525 us, elapsed = 526.19 us.
+Intrinsic tran analysis time:    CPU = 281.56 ms, elapsed = 285.251 ms.
+Total time required for tran analysis `tran': CPU = 285.753 ms, elapsed = 291.59 ms.
+Time accumulated: CPU = 811.061 ms, elapsed = 1.51027 s.
+Peak resident memory used = 73.3 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+Spectre received SIGTERM.
+
+Error found by spectre.
+    ERROR (SPECTRE-25): Killed by user.
+
+
+Aggregate audit (4:36:39 PM, Thur Jul 24, 2025):
+Time used: CPU = 843 ms, elapsed = 309 s (5m  9.4s), util. = 272e-03%.
+Time spent in licensing: elapsed = 14.3 ms.
+Peak memory used = 73.3 Mbytes.
+Simulation started at: 4:31:29 PM, Thur Jul 24, 2025, ended at: 4:36:39 PM, Thur Jul 24, 2025, with elapsed time (wall clock): 309 s (5m  9.4s).
+spectre completes with 1 error, 6 warnings, and 4 notices.
+spectre terminated prematurely due to fatal error.

@@ -1,0 +1,23 @@
+libName = "memory_manualSim"
+cellName = "memristor_crossbar_3x3_PIM"
+viewType = "schematic"
+scriptFilesDir = "/afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files"
+
+
+simulator('spectre)
+design(libName cellName viewType)
+resultsDir(scriptFilesDir)
+path(
+"/afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre" 
+scriptFilesDir
+)
+
+definitionFile("./setInitialCellStates.scs")
+analysis('tran ?stop "30u"  ?errpreset "conservative"  ?maxstep "20n"  ?save "all"  )
+temp( 27 )
+createNetlist()
+run()
+selectResult( 'tran )
+plot(getData("/C22_R") getData("/BL2") getData("/V_SL2/PLUS") )
+plot(getData("/C11_R") getData("/C12_R") getData("/C13_R"))
+

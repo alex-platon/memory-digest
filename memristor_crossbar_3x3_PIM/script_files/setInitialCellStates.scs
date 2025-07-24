@@ -1,0 +1,10 @@
+simulator lang=spectre
+initC11 alter sub=C11 param=initial_state value=0
+initC12 alter sub=C12 param=initial_state value=1
+initC13 alter sub=C13 param=initial_state value=0
+initC21 alter sub=C21 param=initial_state value=1
+initC22 alter sub=C22 param=initial_state value=0
+initC23 alter sub=C23 param=initial_state value=1
+initC31 alter sub=C31 param=initial_state value=0
+initC32 alter sub=C32 param=initial_state value=1
+initC33 alter sub=C33 param=initial_state value=0

@@ -1,0 +1,19 @@
+
+
+simulator('spectre)
+design("memory_manualSim" "memristor_crossbar_3x3_PIM" "schematic")
+resultsDir("/afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files")
+path(
+"/afs/ece.cmu.edu/class/ece622/cad_setup/gpdk045_v_2_0/models/spectre" 
+"/afs/andrew.cmu.edu/usr14/aplanton/virtuoso/memory_manualSim/memristor_crossbar_3x3_PIM/script_files"
+)
+
+definitionFile("./setInitialCellStates.scs")
+analysis('tran ?stop "30u"  ?errpreset "conservative"  ?maxstep "20n"  ?save "all"  )
+save( 'v "/C22_R" "/BL2" )
+save( 'i "/V_SL2/PLUS" )
+temp( 27 )
+createNetlist()
+run()
+selectResult( 'tran )
+plot(getData("/C22_R") getData("/BL2") getData("/V_SL2/PLUS") )
